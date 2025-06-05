@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>assigment</title>
+</head>
+<body>
+	<input type="textbox" placeholder="Enter Amount" id="amnt">
+	<input type="textbox" placeholder="Enter your choice" id="amnt1">
+	<input type="button" value="submit" onclick="hell()">
+	<p id="result"></p>
+	<script>
+		function hell() {
+			let b=100000;
+			let x=parseInt(document.getElementById('amnt').value);
+			let v=parseInt(document.getElementById('amnt1').value);
+			switch(v)
+			{
+			case 1:
+				let u=b+x;
+				document.getElementById('result').innerHTML=u;
+				break;
+			case 2:
+				let n=b-x;
+				document.getElementById('result').innerHTML=n;
+				break;
+			case 3:
+				let t=b;
+				document.getElementById('result').innerHTML=t;
+				break;
+
+			}
+
+		}
+	</script>
+
+</body>
+</html>
